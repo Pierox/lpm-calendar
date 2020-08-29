@@ -53,6 +53,13 @@ $("#forOptionsLiga ul").on('click',function(){
     $("#forOptionsLiga").fadeOut('slow')
 })
 
+$("#forOptionsLiga ul").on('click',function(){
+    var text = $(this).find('span').text()
+    $("#ligaName").text(text);
+})
+
 $('.modal').click(function(e) { 
     e.stopPropagation();
 })
+
+
